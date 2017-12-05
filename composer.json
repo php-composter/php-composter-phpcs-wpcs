@@ -14,5 +14,15 @@
             "email": "gabor@javorszky.co.uk"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "PHPComposter\\PHPComposter_PHPCS_WPCS\\": "src/"
+        }
+    },
+    "extra": {
+        "php-composter-hooks": {
+            "10.pre-commit": "PHPComposter\\PHPComposter_PHPCS_WPCS\\Sniffer::preCommit"
+        }
+    }
 }
