@@ -1,0 +1,18 @@
+{
+    "name": "php-composter/php-composter-phpcs-wpcs",
+    "description": "PHP Composter PHP Code Sniffer for WordPress Coding Standards",
+    "type": "php-composter-action",
+    "require": {
+        "php-composter/php-composter": "^0.2.0",
+        "squizlabs/php_codesniffer": "^2.5",
+        "wp-coding-standards/wpcs": "^0.14.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabor Javorszky",
+            "email": "gabor@javorszky.co.uk"
+        }
+    ],
+    "minimum-stability": "dev"
+}
