@@ -19,10 +19,10 @@ Uses the wonderful [PHP CodeSniffer Project](https://github.com/squizlabs/PHP_Co
 Add the repository's URL as a repository to the `composer.json` file:
 ```
 "repositories": [
-	{
-		"type": "vcs",
-		"url": "https://github.com/php-composter/php-composter-phpcs-wpcs"
-	}
+  {
+    "type": "vcs",
+    "url": "https://github.com/php-composter/php-composter-phpcs-wpcs"
+  }
 ],
 ```
 
