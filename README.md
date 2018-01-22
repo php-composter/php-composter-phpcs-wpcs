@@ -1,8 +1,8 @@
 # PHP Composter PHPCS WPCS
 
-### Check your PHP source code for compliance with WordPress coding standards before committing.
+### Check your PHP source code for compliance with WordPress Coding Standards before committing.
 
-This Composer package will start to check your PHP files upon each commit to make sure they comply to the [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/).
+This Composer package will start to check your PHP files upon each commit to make sure they comply with the [WordPress Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/php/).
 
 This is a [PHP Composter](https://github.com/php-composter/php-composter) Action.
 
@@ -16,7 +16,7 @@ Uses the wonderful [PHP CodeSniffer Project](https://github.com/squizlabs/PHP_Co
 
 ## Installation
 
-Add the repository's URL as a repository to the `composer.json` file:
+Add the GitHub repository's URL as a package repository to the `composer.json` file:
 ```
 "repositories": [
   {
@@ -26,7 +26,7 @@ Add the repository's URL as a repository to the `composer.json` file:
 ],
 ```
 
-Then j add as a development requirement to your `composer.json`, and it should work automagically:
+Then just add the package as a development requirement to your `composer.json`, and it should work automagically:
 
 ```BASH
 composer require --dev php-composter/php-composter-phpcs-wpcs
@@ -38,9 +38,9 @@ It should just work when you `git commit`.
 
 ## Internals
 
-By default of the 5 different WordPress coding standards (`WordPress-VIP`, `WordPress`, `WordPress-Extra`, `WordPress-Docs` and `WordPress-Core`), this one uses the WordPress-Extra.
+By default, of the 5 different WordPress coding standards (`WordPress-VIP`, `WordPress`, `WordPress-Extra`, `WordPress-Docs` and `WordPress-Core`), this one uses the `WordPress-Extra` one.
 
-If you need to change it, currently you need to edit the Sniff file. Contributions on how to make this dynamic are welcome (.env file, different sniffs for each and choosing the appropriate hooks).
+If you need to change it, currently you need to edit the Sniff file. Contributions on how to make this dynamic are welcome (`.env` file, different sniffs for each and choosing the appropriate hooks).
 
 ## Contributing
 
