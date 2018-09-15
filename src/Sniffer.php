@@ -39,9 +39,15 @@ class Sniffer extends BaseAction
 
         echo 'Running PHP CodeSniffer in ' . $this->root . PHP_EOL;
         $sniffer = new PHP_CodeSniffer_CLI();
+        @$config = $this->getExtraKey('php-composter-phpcs-wpcs', [
+            'standard' => 'WordPress-Extra'
+        ]);
 
         ob_start();
-        $numErrors = $sniffer->process(array('standard' => 'WordPress-Extra', 'files' => $files));
+        $numErrors = $sniffer->process([
+            'standard' => $config['standard'],
+            'files' => $files
+        ]);
         $output    = ob_get_clean();
 
         echo $output . PHP_EOL;
