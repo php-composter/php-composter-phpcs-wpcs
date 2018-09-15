@@ -38,9 +38,17 @@ It should just work when you `git commit`.
 
 ## Internals
 
-By default, of the 5 different WordPress coding standards (`WordPress-VIP`, `WordPress`, `WordPress-Extra`, `WordPress-Docs` and `WordPress-Core`), this one uses the `WordPress-Extra` one.
-
-If you need to change it, currently you need to edit the Sniff file. Contributions on how to make this dynamic are welcome (`.env` file, different sniffs for each and choosing the appropriate hooks).
+WPCS provides 5 different coding standards (`WordPress-VIP`, `WordPress`,
+`WordPress-Extra`, `WordPress-Docs` and `WordPress-Core`). By default this uses
+`WordPress-Extra`. If you want to use another one of the standards, you can
+specify it in your project's composer.json's `extra` key:
+ ```json
+  "extra": {
+    "php-composter-phpcs-wpcs": {
+      "standard": "WordPress-VIP"
+    }
+  }
+```
 
 ## Contributing
 
